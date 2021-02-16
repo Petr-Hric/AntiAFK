@@ -10,7 +10,7 @@
 #define LOG_ERROR(message)
 #endif
 
-#define SLEEP_TIME_MS 30000 // Time to perform anti-AFK action
+#define SLEEP_TIME_MS 30000 // Time to wait before any anti-AFK action
 #define MOUSE_POS_PX_INCREMENT 1 // Move mouse by MOUSE_POS_PX_INCREMENT pixels in x and y axis
 #define HIDE_CONSOLE 1 // Hide console in Release build
 

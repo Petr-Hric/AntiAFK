@@ -10,8 +10,9 @@
 #define LOG_ERROR(message)
 #endif
 
-#define SLEEP_TIME 30000
-#define HIDE_CONSOLE 1
+#define SLEEP_TIME_MS 30000 // Time to perform anti-AFK action
+#define MOUSE_POS_PX_INCREMENT 1 // Move mouse by MOUSE_POS_PX_INCREMENT pixels in x and y axis
+#define HIDE_CONSOLE 1 // Hide console in Release build
 
 int main() {
     int returnValue = 0;
@@ -20,7 +21,7 @@ int main() {
     FreeConsole();
 #endif
 
-    int mousePosIncrement = 5;
+    int mousePosIncrement = MOUSE_POS_PX_INCREMENT;
     
     INPUT input = {
         .type = INPUT_MOUSE
@@ -56,7 +57,7 @@ int main() {
 
         SwitchToThread();
 
-        Sleep(SLEEP_TIME);
+        Sleep(SLEEP_TIME_MS);
     } while (1);
     return returnValue;
 }

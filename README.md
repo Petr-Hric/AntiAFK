@@ -1,4 +1,4 @@
-# AntiAFK
+# AntiAFK [Windows]
 Provides mechanism to prevent AFK during playing games and so on
 
 # How to use
